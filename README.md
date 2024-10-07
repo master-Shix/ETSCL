@@ -1,22 +1,22 @@
 # README
 
-## 环境安装
+## Environment setup
 
-1. 创建一个PyTorch环境：
+1. Setup PyTorch env:
     ```bash
     conda create -n etscl python=3.8
     ```
 
-2. 安装所需要的包：
+2. Install packages:
     ```bash
     pip install -r /root/autodl-tmp/ETSCL/requirements_clean.txt
     ```
 
-## 数据集准备
+## Datasets
 
-请下载数据集并放置在指定目录下：[下载链接](xxx)
+Download the datasets：[link](xxx)
 
-## 运行代码
+## Training
 
 ### Stage 1
 
