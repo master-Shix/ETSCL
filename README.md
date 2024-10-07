@@ -1,6 +1,6 @@
 ## Paper
 
-The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Framework for Multi-modal Glaucoma Grading" is published at: [link](https://arxiv.org/abs/2407.14230)
+The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Framework for Multi-modal Glaucoma Grading" is published at the 11th OMIA Workshop on MICCAI 2024. [paper link](https://arxiv.org/abs/2407.14230)
 
 ## Environment setup
 
