@@ -16,7 +16,7 @@ The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Frame
 
 ## Datasets
 - GAMMA dataset: [link](https://doi.org/10.1016/j.media.2023.102938)
-- Preprocessed vessel modality is in this folder: [link](https://drive.google.com/file/d/1TuTXNnG-eGM8U_RQhINXHAslfrC0E6bi/view?usp=sharing)
+- Preprocessed vessel modality: [link](https://drive.google.com/file/d/1TuTXNnG-eGM8U_RQhINXHAslfrC0E6bi/view?usp=sharing)
 
 ## Training
 
