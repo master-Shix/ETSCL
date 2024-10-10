@@ -1,6 +1,6 @@
 ## Paper
 
-The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Framework for Multi-modal Glaucoma Grading" is published at the 11th OMIA Workshop on MICCAI 2024. [paper link](https://arxiv.org/abs/2407.14230)
+The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Framework for Multi-modal Glaucoma Grading" is published at the 11th OMIA Workshop on MICCAI 2024. [paper link](https://doi.org/10.1007/978-3-031-73119-8_2)
 
 ## Environment setup
 
@@ -39,4 +39,29 @@ python main_supcon_thick.py --batch_size 12 --learning_rate 0.001 --temp 0.05 --
 
 ```bash
  CUDA_VISIBLE_DEVICES=0,1 python main_linear2.py --batch_size 14 --learning_rate 0.002    --cosine --classes "all"  --ckpt_oct /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/oct/ckpt_epoch_10.pth --ckpt_fundus /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/fundus/ckpt_epoch_10.pth --ckpt_vessel /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/vessel/ckpt_epoch_10.pth
+```
+## Cite this paper
+```
+@InProceedings{10.1007/978-3-031-73119-8_2,
+author="Yang, Zhiyuan
+and Zhang, Bo
+and Shi, Yufei
+and Zhong, Ningze
+and Loh, Johnathan
+and Fang, Huihui
+and Xu, Yanwu
+and Yeo, Si Yong",
+editor="Bhavna, Antony
+and Chen, Hao
+and Fang, Huihui
+and Fu, Huazhu
+and Lee, Cecilia S.",
+title="ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Framework for Multi-modal Glaucoma Grading",
+booktitle="Ophthalmic Medical Image Analysis",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="11--21",
+isbn="978-3-031-73119-8"
+}
 ```
