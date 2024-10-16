@@ -17,7 +17,25 @@ The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Frame
 ## Datasets
 - GAMMA dataset: [link](https://doi.org/10.1016/j.media.2023.102938)
 - Preprocessed vessel modality: [link](https://drive.google.com/file/d/1TuTXNnG-eGM8U_RQhINXHAslfrC0E6bi/view?usp=sharing)
-
+```
+datasets/
+├── gamma/                         # GAMMA dataset root directory
+│   ├── Training/                  # Training data directory
+│   │   ├── glaucoma_grading_training_GT.xlsx     # Ground truth for glaucoma grading in the training set
+│   │   └── multi-modality_images/  # Directory for multi-modality images used in training
+│   │       ├── 0001/              # OCT image folder for patient 0001
+│   │       │   ├── OCT_image_1.png # Example of OCT image file for patient 0001
+│   │       │   ├── OCT_image_2.png # Example of another OCT image file for patient 0001
+│   │       └── 0001.jpg           # Corresponding fundus image for patient 0001
+│   │       ├── 0002/              # OCT image folder for patient 0002
+│   │       │   ├── OCT_image_1.png # OCT image file for patient 0002
+│   │       └── 0002.jpg           # Corresponding fundus image for patient 0002
+│   ├── Testing/                   # Testing data directory (similar structure as Training)
+│   └── Validation/                # Validation data directory (similar structure as Training)
+├── Vessel/                         # GAMMA dataset root directory
+│   ├── Training/                  # Training data directory for vessel
+│   └── Testing/                   # Testing data directory  for vessel 
+```
 ## Training
 
 ### Stage 1
