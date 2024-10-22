@@ -60,6 +60,17 @@ python main_supcon_thick.py --batch_size 12 --learning_rate 0.001 --temp 0.05 --
 ```bash
  CUDA_VISIBLE_DEVICES=0,1 python main_linear2.py --batch_size 14 --learning_rate 0.002    --cosine --classes "all"  --ckpt_oct /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/oct/ckpt_epoch_10.pth --ckpt_fundus /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/fundus/ckpt_epoch_10.pth --ckpt_vessel /root/autodl-tmp/SupContrast/save/SupCon/path_models/SupCon_path_resnet50_lr_0.001_decay_0.0001_bsz_14_temp_0.05_trial_0_0922_thick384_color_cosine/learning_246810/vessel/ckpt_epoch_10.pth
 ```
+
+## Baseline
+```
+baseline2.py
+```
+
+## Ablation
+```
+main_linear_ablation.py
+```
+
 ## Cite this paper
 ```
 @InProceedings{10.1007/978-3-031-73119-8_2,
