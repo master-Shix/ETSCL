@@ -71,7 +71,7 @@ baseline2.py
 main_linear_ablation.py
 ```
 
-## result reporting
+## Metrics reporting
 You can copy and paste your prediction results and the ground truth in the script below, and get the kappa and accuracy reporting: 
 ```
 trial_and_error.py
