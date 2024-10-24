@@ -71,6 +71,12 @@ baseline2.py
 main_linear_ablation.py
 ```
 
+## result reporting
+You can copy and paste your prediction results and the ground truth in the script below, and get the kappa and accuracy reporting: 
+```
+trial_and_error.py
+```
+
 ## Cite this paper
 ```
 @InProceedings{10.1007/978-3-031-73119-8_2,
