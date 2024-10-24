@@ -10,7 +10,7 @@ accuracy = accuracy_score(true_labels, predicted_labels)
 print(f'Accuracy: {accuracy:.4f}')
 
 # Calculate Kappa
-kappa = cohen_kappa_score(true_labels, predicted_labels)
+kappa = cohen_kappa_score(true_labels, predicted_labels, weights='quadratic')
 print(f'Kappa: {kappa:.4f}')
 
 # Calculate F1 Score
