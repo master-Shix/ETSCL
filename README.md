@@ -67,9 +67,11 @@ baseline2.py
 ```
 
 ## Ablation
-```
-main_linear_ablation.py
-```
+### main_linear_ablation3.py includes:
+- CFP modality + cross-entropy classifier
+- CFP+OCT modalities + cross-entropy classifier
+- CFP+OCT+Vessel modalities + cross-entropy classifier
+
 
 ## Metrics reporting
 You can copy and paste your prediction results and the ground truth in the script below, and get the kappa and accuracy reporting: 
