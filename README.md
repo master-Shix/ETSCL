@@ -15,7 +15,7 @@ The paper "ETSCL: An Evidence Theory-Based Supervised Contrastive Learning Frame
     ```
 
 ## Datasets
-- GAMMA dataset: [link](https://doi.org/10.1016/j.media.2023.102938)
+- GAMMA dataset: [paper](https://doi.org/10.1016/j.media.2023.102938) [download](http://hdmilab.cn/ichallenge)
 - Preprocessed vessel modality: [link](https://drive.google.com/file/d/1TuTXNnG-eGM8U_RQhINXHAslfrC0E6bi/view?usp=sharing)
 ```
 datasets/
@@ -69,9 +69,19 @@ baseline2.py
 ## Ablation
 ### main_linear_ablation3.py includes:
 - CFP modality + cross-entropy classifier
+    - when opt.classes=="fundus"
 - CFP+OCT modalities + cross-entropy classifier
+    - when opt.classes=="two"
 - CFP+OCT+Vessel modalities + cross-entropy classifier
+    - when opt.classes=="all"
 
+### main_linear_ablation2.py includes:
+- CFP modality + supervised contrastive loss + cross-entropy classifier
+    - when opt.classes=="fundus"
+- CFP+OCT modalities + supervised contrastive loss + cross-entropy classifier
+    - when opt.classes=="two"
+- CFP+OCT+Vessel modalities + supervised contrastive loss + cross-entropy classifier
+    - when opt.classes=="all", but need to comment out [line260](https://github.com/master-Shix/ETSCL/blob/e20be559e2bd1ba4a14c47e71751e789b89dcff2/main_linear_ablation2.py#L260), and uncomment [line261](https://github.com/master-Shix/ETSCL/blob/e20be559e2bd1ba4a14c47e71751e789b89dcff2/main_linear_ablation2.py#L261)
 
 ## Metrics reporting
 You can copy and paste your prediction results and the ground truth in the script below, and get the kappa and accuracy reporting: 
